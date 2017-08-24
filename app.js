@@ -1,44 +1,25 @@
-function Submit() {
-  alert("Hello, we are now going on a adventure to find treasure");
-  alert("On the adventure there will come different choices of different things to do, if you choose wrong you might not find the treasure");
 
-    let Name = prompt("Type in your name");
-    while (Name === "") {
-    alert("Please type a name in the field!")
-    let Name = prompt("Type in your name");
+function submit() {
+
+  if(prompt("You awaken with the helmsguard of headaches, what is your name? Throgdor or Cascadius the Vile?") === "Throgdor") {
+    if(prompt("You enter into the forrest of DOOOOOOOM! a path lies to your east, and west.  Which direction do you choose?") === "east") {
+      if(prompt("You find a cave filled with darkness do you enter? Yes, or No?") === "Yes") {
+        if(prompt("You have stumbled upon the beast of the elder king. Shall you strike him in the legs, head, body, or arms?") === "legs") {
+          if(prompt("You make it home with your millions of tons of gold dubloons, when you discover your servant has been plotting a coux! is it the butler, brother in arms, wife, son, or the old man down the street?") === "the old man down the street") {
+            alert("YOU ARE THE MIGHTIEST AND WISEST IN THE SEVEN LANDS!")
+          } else {
+            ('You have chosen... POORLY! YOU DIE!')
+          }
+        } else{
+          alert('YOU HAVE NEVER LEARNED TRUE COMBAT. YOU DIIIIIIIE!')
+        }
+      } else {
+        alert('YOU HAVE FAILED AS THE FIRST BORN OF ROTHNAK THE DESTROYER!!!!')
+      }
+    } else {
+      alert('YOU HAVE BEEN EAATEN BY RABID MONKEYS!! GAME OVER!')
     }
-
-  alert("Hello " + Name);
-
-
-
-  alert("You enter a dark forest " + " you can hear birds singing in the air, and the sound of air sweeping through the trees");
-  alert("Suddenly, you arrive at a road, with 2 different ways, one to the left and one to the right " + "Choose wich way, you wanna take");
-
-  let road = prompt("LEFT or RIGHT?");
-  let decision;
-  let decision2;
-  let decision3;
-  let decision4;
-  let decision5;
-
-
-
-  function roadLeft() {
-    alert("As you start walking on the left road,");
-    alert("Far ahead of you, you see a wooden cabin.");
-    alert("Do you wanna go inside the cabin or continue on the road.");
-    decision = prompt("ROAD or CABIN").toLowerCase();
+  } else {
+   alert('You DIED!')
   }
-
-  if (road === "left") {
-    roadLeft();
-  } else if (road === "right") {
-    alert("You died");
-  }
-
-
-  function
-
-
 }
